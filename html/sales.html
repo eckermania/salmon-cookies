@@ -11,6 +11,28 @@
   <body>
     <h2>Projected Sales</h1>
 
+    <form id = "add-store">
+      <fieldset>
+
+        <legend>Add Store</legend>
+
+        <label for="name">Store name: </label>
+        <input name="name" type="text" size="50" required />
+        <br/>
+        <label for="min">Minimum number of customers an hour: </label>
+        <input name="min" type="number" size="10" required />
+        <br/>
+        <label for="max">Maximum number of customers an hour: </label>
+        <input name="max" type="number" size="10" required />
+        <br/>
+        <label for="avg">Average number of cookies sold per customer: </label>
+        <input name="avg" type="number" size="10" required />
+        <br/>
+        <button type="submit">Add</button> 
+
+      </fieldset>
+    </form>
+
     <table id = "stores"></table>
 
     <br/>

@@ -70,6 +70,10 @@ th:last-child, td:last-child {
     background-color: #343317
 }
 
+tr:last-child {
+    background-color: #343317
+}
+
 .quote {
     font-size: 20px;
     border: 10px dotted black;
@@ -85,4 +89,30 @@ th:last-child, td:last-child {
 
 span {
     font-weight: bold
+}
+
+#add-store {
+    border: 2px solid black;
+    align-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+legend, button {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 0px 20px 0px;
+}
+
+button {
+    width: 100px;
+    padding: 20px;
+    margin: 20px 0px 0px 10px;
 }
