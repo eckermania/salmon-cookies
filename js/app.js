@@ -170,17 +170,21 @@ var columnTotals = [];
 
 // i = allStores index & j = cookie index
 
-for (var i = 0; i < time.length; i++) {
-  var total = 0;
-  for (var j = 0; j < allStores.length; j++) {
-    total += allStores[j].cookie[i];
+function makeTotals () {
+  for (var i = 0; i < time.length; i++) {
+    var total = 0;
+    for (var j = 0; j < allStores.length; j++) {
+      total += allStores[j].cookie[i];
+    }
+    columnTotals.push(total);
   }
-  columnTotals.push(total);
 }
+
 
 // Make footer
 
 function makeFooterRow() {
+  makeTotals();
   var trEl = document.createElement('tr');
   var tdEl = document.createElement('td');
   tdEl.textContent = 'Total';

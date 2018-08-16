@@ -70,12 +70,10 @@ th:last-child, td:last-child {
     background-color: #343317
 }
 
-tr:last-child {
-    background-color: #343317
-}
-
 .quote {
     font-size: 20px;
+    background-color: #343317;
+    color: #f8e8b4;
     border: 10px dotted black;
     font-style: italic;
     width: 500px;
@@ -99,9 +97,10 @@ span {
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    padding: 20px;
+    padding: 2%;
     width: 600px;
     margin-bottom: 20px;
+    line-height: 35px;
 }
 
 legend, button {
@@ -112,7 +111,22 @@ legend, button {
 }
 
 button {
-    width: 100px;
-    padding: 20px;
-    margin: 20px 0px 0px 10px;
+    width: 20%;
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
+    color: #ba7746;
+    background-color: #994726;
+    border-radius: 27%;
+}
+
+button:hover {
+    color: #994726;
+    background-color: #ba7746;
+    cursor: pointer;
+}
+
+tr:last-child {
+    background-color: #343317
 }
