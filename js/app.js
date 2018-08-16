@@ -111,7 +111,6 @@ function formSubmission(event){
   makeHeaderRow();
   renderAllStores();
   makeFooterRow();
-  // Need to render all table rows here? good enough to have it at the end?
 }
 
 // Event listener
@@ -168,7 +167,7 @@ function renderAllStores() {
 // Add up columns
 var columnTotals = [];
 
-// i = allStores index & j = cookie index
+// Generate totals that will populate columnTotals array
 
 function makeTotals () {
   for (var i = 0; i < time.length; i++) {
@@ -180,7 +179,6 @@ function makeTotals () {
   }
 }
 
-
 // Make footer
 
 function makeFooterRow() {
@@ -190,7 +188,7 @@ function makeFooterRow() {
   tdEl.textContent = 'Total';
   trEl.appendChild(tdEl);
 
-  for(var i = 0; i < columnTotals.length; i++) {
+  for(var i = 0; i < time.length; i++) {
     tdEl = document.createElement('td');
     tdEl.textContent = columnTotals[i];
     trEl.appendChild(tdEl);
