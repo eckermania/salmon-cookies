@@ -3,6 +3,7 @@ body {
     background:#f8e8b4;
     font-size: 30px;
     text-align: center;
+    line-height: 40px;
 }
 
 h1 { 
@@ -81,8 +82,8 @@ th:last-child, td:last-child {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 span {
@@ -129,4 +130,59 @@ button:hover {
 
 tr:last-child {
     background-color: #343317
+}
+
+.maps {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #253217;
+}
+
+.topnav {
+    width: 100%;
+    background-color: #253217;
+    color: #f8e8b4;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.fish-icon {
+    height: 40px
+}
+
+.locations-container, .store-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px
+}
+
+.fish-border {
+    height: 250px;
+    background-image: url("../img/drawn-fish.png");
+    background-repeat: round;
+    margin: 100px;
+}
+
+.store-images {
+    border: 2px solid #253217;
+}
+
+figcaption {
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    padding-left: 100px;
+}
+
+#sylvia {
+    margin: 50px 50px 0px 100px;
+    border: 2px solid #253217;
+}
+
+.grandma {
+    margin: 50px
 }
